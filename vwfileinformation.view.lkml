@@ -7,7 +7,7 @@ view: vwfileinformation {
         src_dlvry.SENDER  AS "src_dlvry.sender",
         src_dlvry.VIA  AS "src_dlvry.via",
         src_dlvry.RECIPIENT  AS "src_dlvry.recipient",
-        src_master.SCMST_ID  AS "scmst_id",
+        src_master.SCMST_ID  AS "src_master.scmst_id",
         CONVERT(VARCHAR(10),src_dlvry.DDATE ,120) AS "src_dlvry.ddate_date"
       FROM dbo.SRC_MASTER  AS src_master
       INNER JOIN dbo.SRC_DLVRY  AS src_dlvry ON src_dlvry.SCMST_ID = src_master.SCMST_ID
@@ -64,7 +64,7 @@ view: vwfileinformation {
       src_dlvry.sender,
       src_dlvry.via,
       src_dlvry.recipient,
-      src_dlvry.scmst_id,
+      src_master.scmst_id,
       src_dlvry.ddate_date
     ]
   }

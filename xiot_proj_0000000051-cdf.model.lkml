@@ -35,3 +35,5 @@ explore: src_dlvry {}
 explore: src_files {}
 
 explore: src_master {}
+
+explore: vwfileinformation {}

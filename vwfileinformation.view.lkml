@@ -2,7 +2,7 @@ view: vwfileinformation {
   derived_table: {
     sql: SELECT
       TOP 500
-        src_master.DESCR  AS "src_master.descr",
+        src_master.DESCR  AS "descr",
         src_master.NAME  AS "src_master.name",
         src_dlvry.SENDER  AS "src_dlvry.sender",
         src_dlvry.VIA  AS "src_dlvry.via",
@@ -24,7 +24,7 @@ view: vwfileinformation {
 
   dimension: src_master_descr {
     type: string
-    sql: ${TABLE}."src_master.descr" ;;
+    sql: ${TABLE}."descr" ;;
   }
 
   dimension: src_master_name {

@@ -37,3 +37,5 @@ explore: src_files {}
 explore: src_master {}
 
 explore: vwfileinformation {}
+
+explore: vwtablefields {}

@@ -4,11 +4,11 @@ view: vwfileinformation {
       TOP 500
         src_master.DESCR  AS "src_master.descr",
         src_master.NAME  AS "src_master.name",
-        src_dlvry.SENDER  AS "src_master.sender",
-        src_dlvry.VIA  AS "src_master.via",
-        src_dlvry.RECIPIENT  AS "src_master.recipient",
+        src_dlvry.SENDER  AS "src_dlvry.sender",
+        src_dlvry.VIA  AS "src_dlvry.via",
+        src_dlvry.RECIPIENT  AS "src_dlvry.recipient",
         src_master.SCMST_ID  AS "src_master.scmst_id",
-        CONVERT(VARCHAR(10),src_dlvry.DDATE ,120) AS "src_master.ddate_date"
+        CONVERT(VARCHAR(10),src_dlvry.DDATE ,120) AS "src_dlvry.ddate_date"
       FROM dbo.SRC_MASTER  AS src_master
       INNER JOIN dbo.SRC_DLVRY  AS src_dlvry ON src_dlvry.SCMST_ID = src_master.SCMST_ID
 

@@ -10,6 +10,8 @@ datagroup: xiot_proj_0000000051_cdf_default_datagroup {
 
 persist_with: xiot_proj_0000000051_cdf_default_datagroup
 
+explore: cdf_acd_master {}
+
 explore: cdf_badge_master {}
 
 explore: cdf_catalog {}
